@@ -19,7 +19,12 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+      #red{
+        color: rgba(255, 0, 0, 0.842);
+      }
         .section-title{
             font-size: 2rem;
             text-align: center;
@@ -28,7 +33,7 @@
         };
         .para-font{
             font-size: 0.9rem;
-            color: #13131899;
+            color: #2d2d3699;
         }
         .main-font{
             font-family: 'Manrope', sans-serif;
@@ -52,11 +57,11 @@
                   <li><a>Concact</a></li>
                 </ul>
               </div>
-              <a class="text-xl font-extrabold lg:section-title">Hockey<span class="text-red-600">’</span>s</a>
+              <a class="text-xl font-extrabold lg:text-3xl">Hockey<span class="text-red-600">’</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+                <li><a id="red">Home</a></li>
                   <li><a>About</a></li>
                   <li><a>Pages</a></li>
                   <li><a>Blog</a></li>
@@ -64,7 +69,47 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-red-600 text-white">Get Ticket</a>
+              <div class="flex gap-1 items-center">
+                <i class="fa-solid fa-magnifying-glass hidden md:block"></i>
+                <a class="btn bg-red-600 text-white">Get Ticket</a>
+              </div>
+            </div>
+          </div>
+          <!-- banner section -->
+          <div class="h-[50vh] relative">
+            <div class="carousel h-full w-full">
+              <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a> 
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/b2.jpg" class="w-full " />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a> 
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide3" class="carousel-item relative w-full">
+                <img src="Images/b3.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a> 
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+              </div> 
+              <div id="slide4" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a> 
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
+            <div class="bg-black h-28 w-full lg:w-1/2 rounded-lg p-4 lg:absolute bottom-4 right-4">
+              <h3 class="text-xl text-gray-200">Meet all the heroes from the field</h3>
+              <p class="text-xs text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam deserunt?</p>
             </div>
           </div>
 
