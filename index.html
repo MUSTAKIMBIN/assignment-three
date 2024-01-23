@@ -31,12 +31,13 @@
             font-weight: 800;
             color: #131318;
         };
-        .para-font{
-            font-size: 0.9rem;
-            color: #2d2d3699;
-        }
         .main-font{
             font-family: 'Manrope', sans-serif;
+        }
+        span{
+          color: black;
+          font-weight: 800;
+          font-size: 1.3rem;
         }
     </style>
   </head>
@@ -76,7 +77,7 @@
             </div>
           </div>
           <!-- banner section -->
-          <div class="h-[50vh] relative">
+          <div class="h-[50vh] relative mb-36 lg:mb-0">
             <div class="carousel h-full w-full">
               <div id="slide1" class="carousel-item relative w-full">
                 <img src="Images/1.png" class="w-full" />
@@ -114,8 +115,38 @@
           </div>
 
     </header>
-    <main>
-
+    <main class="container px-4 lg:px-24">
+      <!-- Hockeys Club section -->
+      <section>
+        <div class="club-content text-center my-16 py-8 border-y border-x-0 border-dashed border-2 border-gray-300 ">
+          <h2 class="section-title">Professional Hockeys Club</h2>
+          <p class="text-xs text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, consequatur!</p>
+        </div>
+        <div class="club-progress">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div class="text-center space-y-4">
+              <div class="radial-progress text-red-400" style="--value:87;" role="progressbar"><span>87%</span></div>
+              <h3 class="text-lg font-bold">Prayer Facility</h3>
+              <p class="text-xs text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, distinctio.</p> 
+            </div>
+            <div class="text-center space-y-4">
+              <div class="radial-progress text-green-500" style="--value:95;" role="progressbar"><span>95%</span></div>
+              <h3 class="text-lg font-bold">Experienced Coach</h3>
+              <p class="text-xs text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, distinctio.</p> 
+            </div>
+            <div class="text-center space-y-4">
+              <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar"><span>90%</span></div>
+              <h3 class="text-lg font-bold">Senior Player</h3>
+              <p class="text-xs text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, distinctio.</p>
+            </div>
+            <div class="text-center space-y-4">
+              <div class="radial-progress text-sky-500" style="--value:80;" role="progressbar"><span>80%</span></div>
+              <h3 class="text-lg font-bold">Training Ground</h3>
+              <p class="text-xs text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, distinctio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
